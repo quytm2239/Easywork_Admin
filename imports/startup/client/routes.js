@@ -17,6 +17,13 @@ FlowRouter.route('/', {
     },
 });
 
+FlowRouter.route('/sign-up', {
+  name: 'App.home',
+  action() {
+    BlazeLayout.render('App_body', { main: 'App_register' });
+  },
+});
+
 FlowRouter.notFound = {
     action() {
         BlazeLayout.render('App_body', { main: 'App_notFound' ,
