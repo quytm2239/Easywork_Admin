@@ -3,4 +3,22 @@ html, body {
     height: 100%;
     margin: 0px;
     padding: 0px;
+    min-width: 800px;
+}
+#__blaze-root {
+    height: 100%;
+}
+.layout-top-inset_for_header {
+    height: 60px;
+    min-height: 60px;
+}
+.layout-container {
+    /* Firefox */
+    height: ~"-moz-calc(100% - (80px + 60px))";
+    /* WebKit */
+    height: ~"-webkit-calc(100% - (80px + 60px))";
+    /* Opera */
+    height: ~"-o-calc(100% - (80px + 60px))";
+    /* Standard */
+    height: ~"calc(100% - (80px + 60px))";
 }

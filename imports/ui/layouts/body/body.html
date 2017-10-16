@@ -1,5 +1,8 @@
 <template name="App_body">
-  {{> header}}
-  {{> Template.dynamic template=main}}
-  {{> footer}}
+    {{> header}}
+    <div class="layout-top-inset_for_header"></div>
+    <div class="layout-container">
+        {{> Template.dynamic template=main}}
+    </div>
+    {{> footer}}
 </template>
