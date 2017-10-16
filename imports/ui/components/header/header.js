@@ -7,19 +7,19 @@ Template.header.helpers({
 
 Template.header.events({
     'mouseenter #products'(event, instance) {
-        $('.products').slideDown( "slow");
+        $('.products').slideDown(300);
     },
     'mouseenter #downloads'(event, instance) {
-        $('.downloads').slideDown( "slow");
+        $('.downloads').slideDown(300);
     },
     'mouseenter #applications'(event, instance) {
-        $('.project').slideDown( "slow");
+        $('.project').slideDown(300);
     },
     'mouseenter #project'(event, instance) {
-        $('.project').slideDown( "slow");
+        $('.project').slideDown(300);
     },
     'mouseenter #freeware'(event, instance) {
-        $('.freeware').slideDown( "slow");
+        $('.freeware').slideDown(300);
     },
 
     //leave mouse
