@@ -23,7 +23,8 @@ FlowRouter.route('/', {
 FlowRouter.route('/sign-up', {
   name: 'App.home',
   action() {
-    BlazeLayout.render('App_body', { main: 'App_register' });
+    BlazeLayout.render('App_body', { main: 'App_register', params: ['fullscreen', 'route'] });
+    
   },
 });
 
