@@ -1,8 +1,8 @@
-
+/*
 footer {
     width: 100%;
-    height: 80px;
-    background: @color-main-theme; /* For browsers that do not support gradients */
+    height: 60px;
+    background: @color-main-theme;
     line-height: 1.0 !important;
     color: white;
     position: fixed;
@@ -38,6 +38,56 @@ footer {
         }
     }
 }
+*/
+
+footer {
+    width: 100%;
+    height: 30px;
+    background: @color-main-theme;
+    line-height: 1.0 !important;
+    color: white;
+    position: fixed;
+    bottom: 0;
+
+    i {
+        vertical-align: middle;
+        margin: auto;
+        font-size: 30px;
+    }
+
+    .copy-right, .location, .contact, .phone {
+        height: 30px;
+        line-height: 30px;
+        text-align: left;
+        font-size: 16px;
+    }
+
+    .location, .contact, .phone, i {
+        display: inline;
+    }
+
+    .button-expand-container {
+        width: 30px;
+        height: 30px;
+        position: fixed;
+        bottom: 14px;
+        left: 50%;
+        margin-left: -20px;
+        background: @color-main-theme;
+        border-radius: 6px;
+
+        #buttonExpand {
+            margin-left: -5px;
+            margin-top: -10px;
+            width: 40px;
+            height: 40px;
+            color: white;
+            font-size: 40px;
+        }
+    }
+}
+
+
 
 footer .tooltiptext {
     visibility: hidden;

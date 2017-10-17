@@ -1,23 +1,26 @@
 <template name="footer">
     <footer>
-        <div class="footer-container">
-            <table>
-                <!-- ROW 1 -->
-                <tr>
-                    <td colspan="2">
-                        <div class="copy-right"><b> © 2017 Easywork Services Provider. All Rights Reserved.</b></div>
-                    </td>
-                    <td><i class="material-icons">email</i></td>
-                    <td><div class="contact">quytm2239@gmail.com</div></td>
-                </tr>
-                <!-- ROW 2 -->
-                <tr>
-                    <td><i class="material-icons">home</i></td>
-                    <td><div class="location">12F Lanmark 72, Keangnam, Me Tri St, Nam Tu Liem, Ha Noi.</div></td>
-                    <td><i class="material-icons">call</i></td>
-                    <td><div class="phone">+084-988-352-625</div></td>
-                </tr>
-            </table>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="copy-right"><b> © 2017 Easywork Services Provider. All Rights Reserved.</b></div>
+                </div>
+                <div class="col-md-6">
+                    <i class="material-icons">email</i>
+                    <div class="contact">quytm2239@gmail.com</div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <i class="material-icons">home</i><div class="location">12F Lanmark 72, Keangnam, Me Tri St, Nam Tu Liem, Ha Noi.</div>
+                </div>
+                <div class="col-md-6">
+                    <i class="material-icons">call</i><div class="phone">+084-988-352-625</div>
+                </div>
+            </div>
+        </div>
+        <div class="button-expand-container">
+            <i class="material-icons" id="buttonExpand">expand_less</i>
         </div>
     </footer>
 </template>
