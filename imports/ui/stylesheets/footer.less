@@ -42,13 +42,13 @@ footer {
 
 footer {
     width: 100%;
-    height: 30px;
+    height: 50px;
     background: @color-main-theme;
     line-height: 1.0 !important;
     color: white;
     position: fixed;
     bottom: 0;
-
+    padding-top: 10px;
     i {
         vertical-align: middle;
         margin: auto;
@@ -58,31 +58,42 @@ footer {
     .copy-right, .location, .contact, .phone {
         height: 30px;
         line-height: 30px;
-        text-align: left;
-        font-size: 16px;
+        text-align: center;
+        font-size: 18px;
     }
-
-    .location, .contact, .phone, i {
-        display: inline;
+    .location, .contact, .phone {
+        visibility: hidden;
     }
-
     .button-expand-container {
-        width: 30px;
-        height: 30px;
+        z-index: -1;
+        width: 36px;
+        height: 36px;
         position: fixed;
-        bottom: 14px;
+        bottom: 35px;
         left: 50%;
-        margin-left: -20px;
-        background: @color-main-theme;
-        border-radius: 6px;
+        margin-left: -18px;
+        background: white;
+        border-radius: 18px;
+
+        .button-expand-container-fake-border {
+            z-index: inherit;
+            width: 34px;
+            height: 34px;
+            margin-top: 1px;
+            margin-left: 1px;
+            background: @color-main-theme;
+            border-radius: 17px;
+        }
 
         #buttonExpand {
-            margin-left: -5px;
-            margin-top: -10px;
-            width: 40px;
-            height: 40px;
-            color: white;
-            font-size: 40px;
+            // margin: 0px;
+            cursor: default;
+            margin-left: -2px;
+            margin-top: -3px;
+            width: 38px;
+            height: 38px;
+            color: @color-home-header-background;
+            font-size: 38px;
         }
     }
 }
