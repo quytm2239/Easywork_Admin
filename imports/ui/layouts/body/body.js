@@ -16,20 +16,20 @@ function updateFooterAndLayoutContainer(isScrollDown) {
         $('footer .footer-container').css('padding-bottom',0);
 
         // Update Main layout container
-        $('.layout-container').css('height','-moz-calc(100% - (30px + 74px))');
-        $('.layout-container').css('height','-o-calc(100% - (30px + 74px))');
-        $('.layout-container').css('height','-webkit-calc(100% - (30px + 74px))');
-        $('.layout-container').css('height','calc(100% - (30px + 74px))');
+        $('.layout-container').css('height','-moz-calc(100% - (30px + 60px))');
+        $('.layout-container').css('height','-o-calc(100% - (30px + 60px))');
+        $('.layout-container').css('height','-webkit-calc(100% - (30px + 60px))');
+        $('.layout-container').css('height','calc(100% - (30px + 60px))');
     } else {
         $('footer').height(80);
         $('footer .footer-container').css('padding-top',10);
         $('footer .footer-container').css('padding-bottom',10);
 
         // Update Main layout container
-        $('.layout-container').css('height','-moz-calc(100% - (80px + 74px))');
-        $('.layout-container').css('height','-o-calc(100% - (80px + 74px))');
-        $('.layout-container').css('height','-webkit-calc(100% - (80px + 74px))');
-        $('.layout-container').css('height','calc(100% - (80px + 74px))');
+        $('.layout-container').css('height','-moz-calc(100% - (80px + 60px))');
+        $('.layout-container').css('height','-o-calc(100% - (80px + 60px))');
+        $('.layout-container').css('height','-webkit-calc(100% - (80px + 60px))');
+        $('.layout-container').css('height','calc(100% - (80px + 60px))');
     }
 }
 Template.App_body.events({
