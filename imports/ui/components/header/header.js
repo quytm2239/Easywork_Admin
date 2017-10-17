@@ -57,35 +57,50 @@ Template.header.events({
         }
     },
     'mouseenter #products'(event, instance) {
+        $('#products_label').css('color', 'white');
+        $('#products_label').css('background-color', '#6b082d');
         $('.products').slideDown(300);
     },
     'mouseenter #downloads'(event, instance) {
+    	$('#downloads_label').css('color', 'white');
+    	$('#downloads_label').css('background-color', '#6b082d');
         $('.downloads').slideDown(300);
     },
     'mouseenter #applications'(event, instance) {
+    	$('#applications_label').css('color', 'white');
+    	$('#applications_label').css('background-color', '#6b082d');
         $('.project').slideDown(300);
     },
     'mouseenter #project'(event, instance) {
+    	$('#project_label').css('color', 'white');
+    	$('#project_label').css('background-color', '#6b082d');
         $('.project').slideDown(300);
     },
     'mouseenter #freeware'(event, instance) {
+    	$('#freeware_label').css('color', 'white');
+    	$('#freeware_label').css('background-color', '#6b082d');
         $('.freeware').slideDown(300);
     },
 
     //leave mouse
     'mouseleave #products'(event, instance) {
+    	$('#products_label').removeAttr("style");
         $('.cbp-hrsub').hide();
     },
     'mouseleave #downloads'(event, instance) {
+    	$('#downloads_label').removeAttr("style");
         $('.cbp-hrsub').hide();
     },
     'mouseleave #project'(event, instance) {
+    	$('#project_label').removeAttr("style");
         $('.cbp-hrsub').hide();
     },
     'mouseleave #applications'(event, instance) {
+    	$('#applications_label').removeAttr("style");
         $('.cbp-hrsub').hide();
     },
     'mouseleave #freeware'(event, instance) {
+    	$('#freeware_label').removeAttr("style");
         $('.cbp-hrsub').hide();
     }
 
