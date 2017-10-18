@@ -2,18 +2,18 @@
 	width: 100%;
 	margin-top: 0em;
 	border-bottom: 4px solid @color-main-theme;
-    position: fixed;
+    position: relative;
     top: 0px;
     background-color: #e1cdd5;
 	z-index: 10000;
 }
 
 input[type="text"], textarea {
-  background-color : #f4d9f4; 
+  background-color : #f4d9f4;
 }
 
 .menu-icon {
-	color:mediumvioletred; z-index: 10000000; 
+	color:mediumvioletred; z-index: 10000000;
 	position: fixed;
 	display: none;
 }
@@ -59,14 +59,14 @@ input[type="text"], textarea {
 
 .sub-menu > a {
 	font-weight: 700;
-	padding: 1em 2em;
+	padding: 1em 1.5em;
 	color: @color-main-theme;
 	display: inline-block;
 }
 
 .cbp-hrmenu > ul > li > a {
 	font-weight: 700;
-	padding: 1em 2em;
+	padding: 1em 1.5em;
 	color: #999;
 	display: inline-block;
 }
@@ -128,7 +128,8 @@ input[type="text"], textarea {
 @media screen and (max-width: 52.75em) {
 
 	.cbp-hrmenu {
-		font-size: 80%;
+		// avoid resize uncontrolable
+		// font-size: 80%;
 	}
 
 }

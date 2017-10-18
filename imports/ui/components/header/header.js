@@ -2,11 +2,11 @@ import { Meteor } from 'meteor/meteor';
 import './header.html';
 
 Template.header.helpers({
-   
+
 });
 
 var IS_MOBILE = navigator.userAgent.match(/android/i) != null || navigator.userAgent.match(/iPhone/i) != null;
-   
+
 Template.header.onCreated( function headerOnCreated(){
 });
 
@@ -23,18 +23,18 @@ Template.header.onRendered(function () {
 
 function changeLayout () {
     console.log($(window).width());
-    if (parseInt($(window).width()) <= 700) {
+    if (parseInt($(window).width()) <= 800) {
         $('#menu-icon').css('display','block');
         $('#menu-icon').css('position','fixed');
         $('#cbp-hrmenu').hide();
-        $('#cbp-hrmenu').css('position','static');
+        // $('#cbp-hrmenu').css('position','static');
         $('#cbp-hrmenu').css('margin-left','4em');
     } else {
         $('#menu-icon').hide();
         $('#menu-icon').css('display','none');
         $('#cbp-hrmenu').show();
         $('#menu-icon').removeClass("on");
-        $('#cbp-hrmenu').css('position','fixed');
+        // $('#cbp-hrmenu').css('position','fixed');
         $('#cbp-hrmenu').css('margin-left','auto');
     }
 }
