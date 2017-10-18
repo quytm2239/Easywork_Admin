@@ -54,6 +54,13 @@ function changeLayout () {
         $('.contact').css('font-size',fontSize);
         $('.phone').css('font-size',fontSize);
         $('.footer-i').css('font-size','20px');
+    } else if (parseInt($(window).width()) <= 800) {
+        var fontSize = '15px';
+        $('.copy-right').css('font-size',fontSize);
+        $('.location').css('font-size',fontSize);
+        $('.contact').css('font-size',fontSize);
+        $('.phone').css('font-size',fontSize);
+        $('.footer-i').css('font-size','25px');
     } else {
         var fontSize = '18px';
         $('.copy-right').css('font-size',fontSize);
